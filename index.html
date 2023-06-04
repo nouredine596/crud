@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>crud</title>
+</head>
+<body>
+
+    <div class="container">
+
+        <div class="input" id="input">
+            <div class="totale">
+                <select name="portes" id="portes" onclick="Totale ()">
+                    <option class="option"  value="porte chambre">porte chambre</option>
+                    <option  value="porte sallon">porte sallon</option>
+                    <option  value="porte cuisine">porte cuisine</option>
+                    <option  value="porte deuche">porte deuche</option>
+                    <option  value="porte toillete">porte toillete</option>
+                    <option  value="porte funitre">porte fenêtre</option>
+                    <option  value="porte d'entrée">porte d'entrée</option>
+                    <option  value="fenêtre">fenêtre</option>
+                </select>
+            <input type="number" placeholder="quantité" id="quantité" onkeyup="Totale ()">
+            <input type="number" placeholder="prix" id="prix" onkeyup="Totale ()">
+            <button id="totale">Totale</button>
+            </div>
+
+            <button id="create" onclick="Créer ()">Créer</button>
+          
+          
+        </div>
+        <button id="champs">pour créer un produit il faut remplir les champs</button>
+
+        <table>
+
+            <tr>
+                <th>portes</th>
+                <th>quantité</th>
+                <th>prix</th>
+                <th>totale</th>
+                <th>supprimer</th>
+                <th>changement</th>
+            </tr>
+
+            <tbody class="tbody" id="tbody">
+ 
+            </tbody>
+
+        </table>
+    </div>
+
+    <script src="main.js"></script>
+    
+</body>
+</html>

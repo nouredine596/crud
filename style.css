@@ -1,0 +1,128 @@
+*{
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+    color: var(--color1);
+}
+
+:root{
+
+    --color1 : white;
+    --color2 : rgb(14, 12, 12);
+    --color3 : rgb(107, 71, 10);
+
+
+    --color22 :rgb(65, 63, 63);
+
+}
+
+body{
+    width: 100%;
+    height: 100%;
+    background-color: var(--color2);
+}
+
+.container{
+    width: 80%;
+    height: 100vh;
+    margin: 50px auto;
+    background:var(--color22);
+    border-radius: 20px;
+    border-top-left-radius: 40px;
+   
+
+}
+
+.input{
+    width: 80%;
+    margin: 50px auto;
+}
+.totale{
+    display: flex;
+}
+
+input,#portes{
+    height: 30px;
+    outline: none;
+    border: none;
+    border-radius: 20px;
+    width: 17%;
+    display: flex;
+    margin: 15px auto;
+    padding: 8px;
+    color: wheat;
+    background-color: rgb(22, 22, 22);
+    transition: 2s;
+    cursor: pointer;
+}
+input:hover{
+    transform: scale(1.1);
+}
+
+
+button{
+    height: 30px;
+    border: none;
+    outline: none;
+    width: 17%;
+    border-radius: 20px;
+    background-color: var( --color3 );
+    color: white;
+    cursor: pointer;
+    align-items: center;
+    text-align: center;
+    transition: 2s;
+    justify-content: center;
+    display: flex;
+    margin: auto;
+}
+#champs{
+    width: 40%;
+    margin: 50px auto;
+    display: none;
+}
+#totale{
+    color: var(--color1);
+}
+
+table{
+    width: 80%;
+    text-align: center;
+    margin: auto;
+}
+
+ tr{
+    width: 20%;
+    border: 3px solid brown;
+    margin: 10px 0px;
+}
+
+th{
+    text-transform: uppercase;
+    color: rgb(255, 255, 255);
+}
+
+td,th{
+    padding: 10px;
+   
+}
+
+td,th{
+    border: 1px solid wheat;
+}
+#supprimer{
+    color: rgb(138, 3, 3);
+    width: 110px;
+    font-weight: 900;
+}
+#changement{
+    width: 110px;
+    color: rgb(3, 3, 58);
+    font-weight: 900;
+}
+#totaleTous{
+    background-color:  var( --color3 );
+}
+option{
+    color: wheat;
+}
